@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# 🐾 Get a Pet — Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Interface web para a plataforma de adoção de animais. Consome a API REST do backend para permitir que usuários cadastrem pets, gerenciem perfis e realizem solicitações de adoção.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tecnologias
 
-### `npm start`
+- **[React v19](https://react.dev/)** — Biblioteca de interface
+- **[React Router DOM v7](https://reactrouter.com/)** — Navegação entre páginas
+- **[Axios](https://axios-http.com/)** — Requisições HTTP
+- **[React Icons](https://react-icons.github.io/react-icons/)** — Ícones
+- **[Create React App](https://create-react-app.dev/)** — Tooling do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Estrutura do Projeto
 
-### `npm test`
+```
+├── 📁 public
+│   └── 🌐 index.html
+├── 📁 src
+│   ├── 📁 assets
+│   │   └── 📁 img
+│   ├── 📁 components
+│   ├── 📁 context
+│   ├── 📁 hooks
+│   ├── 📁 utils
+│   ├── 📄 App.js
+│   ├── 🎨 index.css
+│   └── 📄 index.js
+├── ⚙️ .gitignore
+├── ⚙️ .prettierrc
+├── 📝 README.md
+├── ⚙️ package-lock.json
+└── ⚙️ package.json
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/) v18+
+- Backend do projeto rodando — [get-a-pet-backend](https://github.com/victor-hugo-ss/get-a-pet-backend)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Instalação e execução
 
-### `npm run eject`
+```bash
+# Clone o repositório
+git clone https://github.com/victor-hugo-ss/get-a-pet-frontend.git
+cd get-a-pet-frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Instale as dependências
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Configure as variáveis de ambiente
+cp .env.example .env
+# Edite o arquivo .env com suas configurações
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Inicie o servidor de desenvolvimento
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔑 Variáveis de Ambiente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Crie um arquivo `.env` na raiz do projeto com base no `.env.example`:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```env
+REACT_APP_API=http://localhost:5000
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔗 Repositórios do Projeto
 
-### Analyzing the Bundle Size
+| Repositório | Link                                                                       |
+| ----------- | -------------------------------------------------------------------------- |
+| Backend     | [get-a-pet-backend](https://github.com/victor-hugo-ss/get-a-pet-backend)   |
+| Frontend    | [get-a-pet-frontend](https://github.com/victor-hugo-ss/get-a-pet-frontend) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📄 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este projeto está sob a licença ISC. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">Feito para conectar pets e pessoas</p>
