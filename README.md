@@ -23,12 +23,18 @@ Interface web para a plataforma de adoção de animais. Consome a API REST do ba
 │   ├── 📁 assets
 │   │   └── 📁 img
 │   ├── 📁 components
+│   │   └── 📁 pages
+│   │       ├── 📁 auth
+│   │       │   ├── 📄 Login.js
+│   │       │   └── 📄 Register.js
+│   │       └── 📄 Home.js
 │   ├── 📁 context
 │   ├── 📁 hooks
 │   ├── 📁 utils
 │   ├── 📄 App.js
 │   ├── 🎨 index.css
 │   └── 📄 index.js
+├── ⚙️ .env.example
 ├── ⚙️ .gitignore
 ├── ⚙️ .prettierrc
 ├── 📝 README.md
