@@ -11,14 +11,14 @@ function Navbar() {
                 <img src={Logo} alt="Get A Pet" />
                 <h2>Get A Pet</h2>
             </div>
-            <ul>
+            <ul className={styles.navbar_links}>
                 <li>
                     <Link to={'/'}>Adotar</Link>
                 </li>
                 <li>
                     <Link to={'/login'}>Entrar</Link>
                 </li>
-                <li>
+                <li className={styles.navbar_cta}>
                     <Link to={'/register'}>Cadastrar</Link>
                 </li>
             </ul>

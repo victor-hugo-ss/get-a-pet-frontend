@@ -1,44 +1,63 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1em 1.5em;
-    background-color: #ffd400;
-    color: #16479d;
+    align-items: center;
+    padding: 0.85em 1.5em;
+    background-color: var(--color-primary);
 }
 
 .navbar_logo {
     display: flex;
     align-items: center;
+    gap: 0.6em;
 }
 
 .navbar_logo img {
-    width: 70px;
-    margin-right: 0.8em;
+    width: 65px;
+    border-radius: var(--radius-sm);
 }
 
-.navbar ul {
+.navbar_logo h2 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+.navbar_links {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     list-style: none;
 }
 
-.navbar li,
-.navbar a {
+.navbar_links li a {
+    display: block;
     text-decoration: none;
-    color: #16479d;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 0.5em 0.5em;
-    border-radius: 5px;
+    color: var(--color-primary-bg);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.45em 0.9em;
+    border-radius: var(--radius-sm);
+    transition:
+        background 0.2s,
+        color 0.2s;
 }
 
-.navbar li:hover {
-    background-color: #16479d;
+.navbar_links li:hover a {
+    background-color: var(--color-primary-dark);
     color: #fff;
 }
 
-.navbar li:hover > a {
-    color: #fff;
+/* Botão de destaque para "Cadastrar" */
+.navbar_cta a {
+    background-color: #fff;
+    color: var(--color-primary) !important;
+    font-weight: 600 !important;
+}
+
+.navbar_cta:hover a {
+    background-color: var(--color-primary-bg) !important;
+    color: var(--color-primary-dark) !important;
 }
