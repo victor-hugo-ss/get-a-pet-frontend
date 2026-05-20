@@ -9,7 +9,6 @@ function Navbar() {
         <nav className={styles.navbar}>
             <div className={styles.navbar_logo}>
                 <img src={Logo} alt="Get A Pet" />
-                <h2>Get A Pet</h2>
             </div>
             <ul className={styles.navbar_links}>
                 <li>
